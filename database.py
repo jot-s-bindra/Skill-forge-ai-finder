@@ -8,11 +8,10 @@ MONGO_URI = os.getenv("MONGODB_URI")
 client = pymongo.MongoClient(MONGO_URI)
 db = client["skill-forge"]
 users_collection = db["users"]
-
 def test_connection():
     try:
         users_collection.insert_one({"test": "connection_check"})
-        print("✅ MongoDB Connected Successfully")
+        print("✅ MongoDB Connected Successfully (Python)")
     except Exception as e:
         print("❌ MongoDB Connection Failed:", str(e))
 
