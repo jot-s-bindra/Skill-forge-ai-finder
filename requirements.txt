@@ -3,3 +3,4 @@ pymongo
 sentence-transformers
 torch
 python-dotenv
+flask_cors
